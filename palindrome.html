@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>palindrome</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+   <script>
+   
+      		
+	// palindrome_number
+
+     let num=parseInt(prompt("enter a number"));
+    let sum=0;
+    let val=num;
+    while(num>0){
+        rem=num%10;
+        num=(num-rem)/10;
+        sum=(sum*10)+rem;
+    }
+    if(sum==val){
+        document.write("this is palindrome number");
+    }
+    else{
+        document.write("This is not palindrome number");
+    }
+	
+	
+	// palindrome_string
+	
+	var letter=prompt("Palindrom")
+		var tem=[]
+		for(i=letter.length-1;i>=0;i--){
+			tem+=letter[i]
+			
+		}
+		if(letter==tem){
+		 console.log("palindrome")		
+			}
+		else{
+		console.log("not palindrome")
+		}
+    	
+   
+   </script>
+
+</body>
+</html>
